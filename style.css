@@ -1,0 +1,87 @@
+.my_class{
+    color: orangered;
+}
+.second_class{
+    background-color: blueviolet;
+}
+
+.main
+{
+  padding: 20px;
+}
+
+
+@font-face {
+  font-family: 'InterBold';
+  src: url('fonts/InterBold.ttf') format('truetype');
+}
+.title_main
+{
+  font-family: 'InterBold';
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-align: left;
+  text-align: top;
+}
+
+.title_wrapper
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: auto;
+}
+
+.button_title
+{
+  border-radius: 30px;
+  font-family: 'InterBold';
+  border-color: #BBBBBB;
+  stroke-width: 1px;
+  font-size: 14px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.button_wrapper
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-clr: orangered;
+}
+
+.card{
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--main-clr);
+    border-radius: 30px;
+    background-color: cadetblue;
+    padding: 20px;
+}
+
+.card_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media screen and (max-width: 500px){
+    .card{
+        background-color: pink;
+    }
+}
